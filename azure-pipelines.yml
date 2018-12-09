@@ -16,7 +16,7 @@ steps:
   inputs:
     command: publish
     arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-    projects: functions-simple.csproj
+    projects: azure-functions-credicardcheck.csproj
     publishWebProjects: false
     modifyOutputPath: true
     zipAfterPublish: true

@@ -28,7 +28,7 @@ namespace Boris.Function
 
             return creditCardNumber != null
                 ? (ActionResult)new OkObjectResult($"ID is valid: {idCheck(creditCardNumber)}")
-                : new BadRequestObjectResult("Please pass a credit card id on the query string or in the request body");
+                : new BadRequestObjectResult("Pass a credit card id on the query string or in the request body");
         }
 
         private static bool idCheck(string creditCardNumber) {
